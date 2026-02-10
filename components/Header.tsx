@@ -30,7 +30,7 @@ const Header = () => {
           <Link
             href={"/coins"}
             className={cn("nav-link", {
-              "is-active": pathname === "/coins",
+              "is-active": pathname.startsWith("/coins"),
             })}
           >
             All coins
